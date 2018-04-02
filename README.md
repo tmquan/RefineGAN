@@ -1,5 +1,5 @@
 
-# RefineGAN (is under construction)
+# RefineGAN 
 
 ----------
 This repository holds the code for RefineGAN, 
@@ -93,7 +93,7 @@ To test the model
 		    --gpu='0' 				 \
 		    --imageDir='data/knees/db_valid/' 	 \
 		    --labelDir='data/knees/db_valid/' 	 \
-		    --maskDir='data/mask/cartes/mask_1/' \
+		    --maskDir='data/mask/radial/mask_1/' \
 		    --sample='result/exp_knees_RefineGAN_mask_radial_1/' \
 		    --load='train_log/exp_knees_RefineGAN_mask_radial_1/max-validation_PSNR_boost_A.data-00000-of-00001'   
 
