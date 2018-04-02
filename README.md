@@ -60,10 +60,13 @@ Knees data is used for complex-value experiment, it is extracted from http://mri
 
 ----------
 
-Prequisition 
+Prerequisites
 
     sudo pip install tensorflow_gpu==1.4.0
 	sudo pip install tensorpack==0.8.2
+	sudo pip install scikit-image==0.13.0
+	sudo pip install whatever-missing_libraries
+
 ----------
 
 
