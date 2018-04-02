@@ -77,6 +77,8 @@ For example, if you want to run the training and testing for case knees data, ma
     ln -s exp_dset_RefineGAN_mask_strategy_rate.py 	 \
 		  exp_knees_RefineGAN_mask_radial_1.py
 
+----------
+
 To train the model
 
     python exp_knees_RefineGAN_mask_radial_1.py  	 \
@@ -87,9 +89,14 @@ To train the model
 		    
 Checkpoint of training will be save to directory `train_log`
 
+----------
+
 To test the model
 
-     python exp_knees_RefineGAN_mask_radial_1.py  	 \
+    mkdir result 
+
+
+    python exp_knees_RefineGAN_mask_radial_1.py  	 \
 		    --gpu='0' 				 \
 		    --imageDir='data/knees/db_valid/' 	 \
 		    --labelDir='data/knees/db_valid/' 	 \
