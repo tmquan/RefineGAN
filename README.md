@@ -60,6 +60,12 @@ Knees data is used for complex-value experiment, it is extracted from http://mri
 
 ----------
 
+Prequisition 
+
+    sudo pip install tensorflow_gpu==1.4.0
+	sudo pip install tensorpack==0.8.2
+----------
+
 
 To begin, the template for such an experiment  is provided in `exp_dset_RefineGAN_mask_strategy_rate.py`
 
@@ -86,7 +92,7 @@ To test the model
 		    --labelDir='data/knees/db_valid/' 	 \
 		    --maskDir='data/mask/cartes/mask_1/' \
 		    --sample='result/exp_knees_RefineGAN_mask_radial_1/' \
-		    --load='train_log/exp_knees_RefineGAN_mask_radial_1/model-20000.data-00000-of-00001'   
+		    --load='train_log/exp_knees_RefineGAN_mask_radial_1/max-validation_PSNR_boost_A.data-00000-of-00001'   
 
 
 ----------
