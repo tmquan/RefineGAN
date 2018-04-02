@@ -54,8 +54,9 @@ Directory structure of data:
 
     
     
-Brain data is used for magnitude-value experiment, it is extracted from IXI dataset
-Knees data is used for complex-value experiment, it is extracted from IXI dataset
+Brain data is used for magnitude-value experiment, it is extracted from http://brain-development.org/ixi-dataset/ 
+
+Knees data is used for complex-value experiment, it is extracted from http://mridata.org 
 
 ----------
 
