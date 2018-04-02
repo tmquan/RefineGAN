@@ -1,5 +1,5 @@
 
-# RefineGAN
+# RefineGAN (is under construction)
 
 ----------
 This repository holds the code for RefineGAN, 
@@ -65,13 +65,13 @@ To begin, the template for such an experiment  is provided in `exp_dset_RefineGA
 
 For example, if you want to run the training and testing for case knees data, mask radial 10%, please make a soft link to the experiment name, like this
 
-    ln -s exp_dset_RefineGAN_mask_strategy_rate.py \
+    ln -s exp_dset_RefineGAN_mask_strategy_rate.py 	 \
 		  exp_knees_RefineGAN_mask_radial_1.py
 
 To train the model
 
-    python exp_knees_RefineGAN_mask_radial_1.py  \
-		    --gpu='0'							 \
+    python exp_knees_RefineGAN_mask_radial_1.py  	 \
+		    --gpu='0'				 \
 		    --imageDir='data/knees/db_train/'    \
 		    --labelDir='data/knees/db_train/'    \
 		    --maskDir='data/mask/radial/mask_1/' 
@@ -80,8 +80,8 @@ Checkpoint of training will be save to directory `train_log`
 
 To test the model
 
-     python exp_knees_RefineGAN_mask_radial_1.py \
-		    --gpu='0' 							 \
+     python exp_knees_RefineGAN_mask_radial_1.py  	 \
+		    --gpu='0' 				 \
 		    --imageDir='data/knees/db_valid/' 	 \
 		    --labelDir='data/knees/db_valid/' 	 \
 		    --maskDir='data/mask/cartes/mask_1/' \
