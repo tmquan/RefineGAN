@@ -4,6 +4,9 @@
 ----------
 This repository holds the code for RefineGAN, 
 
+![RefineGAN] 
+(http://github.com/tmquan/RefineGAN/blob/master/RefineGAN.png)
+
 It is developed for research purposes only and not for commercialization. 
 If you use it, please refer to our work. 
 
@@ -15,7 +18,7 @@ If you use it, please refer to our work.
     volume={PP}, 
     number={99}, 
     pages={1-1}, 
-    keywords={Databases;Gallium nitride;Image quality;Image reconstruction;Machine learning;Magnetic resonance imaging;Training;Compressed Sensing;CycleGAN;DiscoGAN;GAN;MRI}, 
+    keywords={Image reconstruction;Machine learning;Magnetic resonance imaging;Compressed Sensing;MRI;GAN;CycleGAN;DiscoGAN}, 
     doi={10.1109/TMI.2018.2820120}, 
     ISSN={0278-0062}, 
     month={},}
