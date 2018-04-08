@@ -4,8 +4,7 @@
 ----------
 This repository holds the code for RefineGAN, 
 
-![RefineGAN] 
-(http://github.com/tmquan/RefineGAN/blob/master/RefineGAN.png)
+![RefineGAN] (https://raw.githubusercontent.com/tmquan/RefineGAN/master/RefineGAN.png)
 
 It is developed for research purposes only and not for commercialization. 
 If you use it, please refer to our work. 
