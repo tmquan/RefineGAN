@@ -1,10 +1,28 @@
 
 # RefineGAN 
-
 ----------
+
 This repository holds the code for RefineGAN, 
 
-![RefineGAN] (https://raw.githubusercontent.com/tmquan/RefineGAN/master/RefineGAN.png)
+![](https://raw.githubusercontent.com/tmquan/RefineGAN/master/data/Overview.png "")
+*Overview of the proposed method: it aims to reconstruct the images which are satisfied the constraint of under-sampled measurement data; and
+whether those look similar to the fully aliasing-free results. Additionally, if the fully sampled images taken from the database go through the same process of
+under-sampling acceleration; we can still receive the reconstruction as expected to the original images.*
+
+![](https://raw.githubusercontent.com/tmquan/RefineGAN/master/data/ReconGAN.png "")
+*Two learning processes are trained adversarially to achieve better reconstruction from generator G and to fool the ability of recognizing the real or
+fake MR image from discriminator D*
+
+
+![](https://raw.githubusercontent.com/tmquan/RefineGAN/master/data/DualLoss.png "")
+*The cyclic data consistency loss, which is a combination of under-sampled frequency loss and the fully reconstructed image loss.*
+
+
+![](https://raw.githubusercontent.com/tmquan/RefineGAN/master/data/RefineGAN.png "")
+*Generator G, built by basic building blocks, can reconstruct inverse amplitude of the residual component causes by reconstruction from under-sampled
+k-space data. The final result is obtained by adding the zero-filling reconstruction to the output of G*
+
+----------
 
 It is developed for research purposes only and not for commercialization. 
 If you use it, please refer to our work. 
@@ -21,6 +39,7 @@ If you use it, please refer to our work.
     doi={10.1109/TMI.2018.2820120}, 
     ISSN={0278-0062}, 
     month={},}
+    
 ----------
 Directory structure of data:
 
