@@ -267,7 +267,7 @@ class Model(GANModelDesc):
 		print viz_A_recon, vis_A_recon
 		print M1, S1, T1
 	def _get_optimizer(self):
-		lr = symbolic_functions.get_scalar_var('learning_rate', 2e-4, summary=True)
+		lr = symbolic_functions.get_scalar_var('learning_rate', 1e-4, summary=True)
 		return tf.train.AdamOptimizer(lr, beta1=0.5, epsilon=1e-3)
 
 
@@ -442,7 +442,7 @@ def main():
 					]),
 				ClipCallback(),
 				ScheduledHyperParamSetter('learning_rate', 
-					[(0, 2e-4), (100, 1e-4), (200, 2e-5), (300, 1e-5), (400, 2e-6), (500, 1e-6)], interp='linear')
+					[(0, 1e-4), (100, 3e-4), (200, 2e-5), (300, 1e-5), (400, 2e-6), (500, 1e-6)], interp='linear')
 				
 				],
 			session_init=SaverRestore(args.load) if args.load else None, 
